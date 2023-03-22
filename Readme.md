@@ -1,4 +1,4 @@
-# Relógio Digital
+# Super Mario Game
 
 Olá, esse foi um mini game do Mario criado com javascript 😃
 
