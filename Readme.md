@@ -10,7 +10,7 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 <h2>Clique Aqui ⬇</h2> 
 Jogo do Mario:
-https://projetil.netlify.app
+https://mario-juanvictor-cmd.netlify.app
 
 ### 📋 Pré-requisitos
 
