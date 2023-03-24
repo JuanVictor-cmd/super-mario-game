@@ -172,8 +172,13 @@ body{
         left: 32px;
     }
 
-    60%{
+    80%{
         bottom: 14.2rem;
+        left: 32px;
+    }
+
+    90%{
+        bottom: 12rem;
         left: 32px;
     }
     
