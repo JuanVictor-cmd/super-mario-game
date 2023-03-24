@@ -1,5 +1,8 @@
-
-
+const tema = new Audio ('./ost/theme.mp3')
+const dead = new Audio ('./ost/dead.mp3')
+let pontuacao = document.getElementById('pontos')
+let pontos = -13
+const scoreBoardPosition = document.querySelector('.score')
 const mario = document.querySelector('.mario');
 const idle = document.querySelector('.idle')
 const clouds = document.querySelector('.clouds')
@@ -15,8 +18,15 @@ function jump(){
     }, 500);
 }
 
-const loop = setInterval(() =>{
+const ganharPontos = () => {
+    pontos = pontos + 0.1
+    if (pontos >= 0) {
+        pontuacao.textContent = Math.trunc(pontos)
+    }
+}
 
+const loop = setInterval(() =>{
+    tema.play()
     const idlePosition = idle.offsetLeft;
     const marioPosition = window.getComputedStyle(mario).bottom.replace('px', '');
     const html = document.querySelector('html');
@@ -34,6 +44,9 @@ const loop = setInterval(() =>{
         mario.src = './imgs/gameover.png';
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
+
+        tema.pause()
+        dead.play()
 
         clouds.style.animation = 'none';
         clouds.style.display = 'none';
@@ -59,6 +72,8 @@ const loop = setInterval(() =>{
         // recarrega a página
             location.reload();
             });
+    } else {
+        ganharPontos()
     }
 },10);
 document.addEventListener('keydown', jump);
