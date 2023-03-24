@@ -142,6 +142,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 4rem;
+    height: 3rem;
     right: 0;
     animation: idle-animation 1.5s infinite linear;
 }
@@ -183,7 +184,7 @@ body{
     }
     
     100%{
-        bottom: 0;
+        bottom: 1rem;
     }
 }
 
