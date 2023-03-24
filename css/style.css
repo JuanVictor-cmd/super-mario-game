@@ -82,15 +82,15 @@ body{
     }
 
     40%{
-        bottom: 11.25rem;
+        bottom: 12.2rem;
     }
 
     50%{
-        bottom: 11.25rem;
+        bottom: 12.2rem;
     }
 
     60%{
-        bottom: 11.25rem;
+        bottom: 12.2rem;
     }
     
     100%{
@@ -126,15 +126,15 @@ body{
     }
 
     40%{
-        bottom: 11.25rem;
+        bottom: 12.4rem;
     }
 
     50%{
-        bottom: 11.25rem;
+        bottom: 12.4rem;
     }
 
     60%{
-        bottom: 11.25rem;
+        bottom: 12.4rem;
     }
     
     100%{
@@ -155,6 +155,6 @@ body{
         bottom: 0;
         width: 5rem;
         right: 0;
-        animation: idle-animation 1.1s infinite linear;
+        animation: idle-animation 1.3s infinite linear;
     }
 }
