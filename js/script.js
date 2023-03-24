@@ -33,7 +33,7 @@ const loop = setInterval(() =>{
 
     console.log(idlePosition)
 
-    if (idlePosition <= 120 && idlePosition > 0 && marioPosition < 80){
+    if (idlePosition <= 87 && idlePosition > 0 && marioPosition < 62){
 
         idle.style.animation = 'none';
         idle.style.left = `${idlePosition}px`

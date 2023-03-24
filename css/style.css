@@ -64,7 +64,7 @@ body{
     bottom: 0;
     width: 5rem;
     right: 0;
-    animation: idle-animation 1.6s infinite linear;
+    animation: idle-animation 1.8s infinite linear;
 }
 
 .mario{
@@ -94,18 +94,22 @@ body{
 
     40%{
         bottom: 12.4rem;
+        left: 20px;
     }
 
     50%{
         bottom: 12.4rem;
+        left: 20px;
     }
 
     60%{
         bottom: 12.4rem;
+        left: 20px;
     }
     
     100%{
         bottom: 0;
+        left: 5px;
     }
 }
 
@@ -119,6 +123,28 @@ body{
 }
 
 @media (max-width: 650px) {
+
+
+    
+.text{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    margin-top: 7rem;
+    font-weight: 600;
+}
+
+.idle{
+    position: absolute;
+    bottom: 0;
+    width: 4rem;
+    right: 0;
+    animation: idle-animation 1.5s infinite linear;
+}
 
     
 @keyframes clouds-animation{
@@ -137,15 +163,18 @@ body{
     }
 
     40%{
-        bottom: 12.4rem;
+        bottom: 14.2rem;
+        left: 32px;
     }
 
     50%{
-        bottom: 12.4rem;
+        bottom: 14.2rem;
+        left: 32px;
     }
 
     60%{
-        bottom: 12.4rem;
+        bottom: 14.2rem;
+        left: 32px;
     }
     
     100%{
@@ -155,17 +184,11 @@ body{
 
 @keyframes idle-animation{
     from{
-        right: -5rem;
+        right: -4rem;
     }
     to{
         right: 100%;
     }
 }
-    .idle{
-        position: absolute;
-        bottom: 0;
-        width: 5rem;
-        right: 0;
-        animation: idle-animation 1.3s infinite linear;
-    }
+
 }
