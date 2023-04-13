@@ -62,9 +62,9 @@ body{
 .idle{
     position: absolute;
     bottom: 0;
-    width: 5rem;
+    width: 4rem;
     right: 0;
-    animation: idle-animation 1.8s infinite linear;
+    animation: idle-animation 2s infinite linear;
 }
 
 .mario{
@@ -122,6 +122,76 @@ body{
     }
 }
 
+@media(max-width: 320px){
+
+    .idle{
+        position: absolute;
+        bottom: 0;
+        width: 4rem;
+        height: 3rem;
+        right: 0;
+        animation: idle-animation 3s infinite linear !important;
+    }
+
+    .jump{
+        animation: mario 400ms ease-out;
+    }
+    @keyframes mario {
+
+        0%{
+            bottom: 0;
+        }
+    
+        40%{
+            bottom: 15rem;
+            left: 32px;
+        }
+    
+        50%{
+            bottom: 15rem;
+            left: 32px ;
+        }
+    
+        90%{
+            bottom: 15rem ;
+            left: 32px ;
+        }
+    
+        95%{
+            bottom: 15rem ;
+            left: 32px ;
+        }
+    
+        98%{
+            bottom: 10rem ;
+            left: 32px ;
+        }
+        
+        100%{
+            bottom: 1rem;
+            left: 32px;
+        }
+    }
+}
+
+@media(max-width: 420px){
+    .jump{
+        animation: mario 400ms ease-out;
+    }
+    .idle{
+        position: absolute;
+        bottom: 0;
+        width: 4rem;
+        height: 3rem;
+        right: 0;
+        animation: idle-animation 1.1s infinite linear !important;
+    }
+
+    .continue{
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 650px) {
 
     .jump{
@@ -146,7 +216,7 @@ body{
     width: 4rem;
     height: 3rem;
     right: 0;
-    animation: idle-animation 1.3s infinite linear;
+    animation: idle-animation 1s infinite linear;
 }
 
     
@@ -166,32 +236,34 @@ body{
     }
 
     40%{
-        bottom: 14.2rem;
+        bottom: 15rem;
         left: 32px;
     }
 
     50%{
-        bottom: 14.2rem;
-        left: 32px;
+        bottom: 15rem;
+        left: 32px ;
     }
 
     90%{
-        bottom: 14.2rem;
-        left: 32px;
+        bottom: 15rem ;
+        left: 50px ;
     }
 
     95%{
-        bottom: 12rem;
-        left: 32px;
+        bottom: 15rem ;
+        left: 50px ;
     }
 
     98%{
-        bottom: 7rem;
-        left: 32px;
+        bottom: 10rem ;
+        left: 60px ;
+        
     }
     
     100%{
-        bottom: 1rem;
+        bottom: 15rem;
+        left: 60px;
     }
 }
 
